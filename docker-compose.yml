@@ -18,6 +18,8 @@ services:
   web:
     image: jpthe2/visit_medical:v1
     restart: unless-stopped
+    env_file:
+      - .env
     ports:
       - "8020:8000"
     depends_on:
