@@ -28,7 +28,7 @@ services:
       MYSQL_HOST: db
       MYSQL_PORT: 3306
     ports:
-      - "8020:8000"
+      - "8120:8000"
     depends_on:
       db:
         condition: service_healthy
